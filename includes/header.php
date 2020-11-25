@@ -1,9 +1,18 @@
 <?php
-include ($_SERVER['DOCUMENT_ROOT'].'/eshop/includes/db.php');
-include ($_SERVER['DOCUMENT_ROOT'].'/eshop/functions/functions.php');
+session_start();
+include($_SERVER['DOCUMENT_ROOT'] . '/eshop/includes/db.php');
+include($_SERVER['DOCUMENT_ROOT'] . '/eshop/functions/functions.php');
+
+//include("includes/session.php");
+// if($_SESSION['username']==''){
+//     header("location: login.php");
+   
+// }
+
 ?>
 <!doctype html>
 <html lang="en">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -18,45 +27,61 @@ include ($_SERVER['DOCUMENT_ROOT'].'/eshop/functions/functions.php');
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <title>Jambo</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<nav class="navbar navbar-expand-sm sticky-top navbar-dark bg-dark">
-    <div class="container">
-        <a href="index.php" class="navbar-brand">JamboShop</a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a href="index.php" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="shop.php" class="nav-link">Shop</a>
-                </li>
-                <li class="nav-item">
-                    <a href="register.php" class="nav-link">Account</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.php" class="nav-link">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                    <a href="cart.php" class="nav-link">
-                        <i class="fa fa-shopping-cart fa-8x"></i>
-                        <span><?php items(); ?> </span>
-                    </a>
-                </li>
-            </ul>
-            <form method="POST" class="navbar-form navbar-left" action="search.php">
-                <div class="input-group">
-                    <input type="text" class="form-control" id="navbar-search-input" name="keyword" placeholder="Search for Product" required>
-                    <span class="input-group-btn" id="searchBtn" style="display:none;">
-                  <button type="submit" class="btn btn-default btn-flat"><i class="fa fa-search"></i> </button>
-              </span>
-                </div>
-            </form>
+    <nav class="navbar navbar-expand-sm sticky-top navbar-dark bg-dark">
+        <div class="container">
+            <a href="index.php" class="navbar-brand">JamboShop</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <form method="POST" class="navbar-form navbar-left" action="search.php">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="navbar-search-input" name="keyword" placeholder="Search for Product" required>
+                            <span class="input-group-btn" id="searchBtn" style="display:none;">
+                                <button type="submit" class="btn btn-default btn-flat"><i class="fa fa-search"></i> </button>
+                            </span>
+                        </div>
+                    </form>
+                    <li class="nav-item active">
+                        <a href="index.php" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="shop.php" class="nav-link">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="register.php" class="nav-link">Account</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.php" class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cart.php" class="nav-link">
+                            <i class="fa fa-shopping-cart fa-8x"></i>
+                            <span><?php items(); ?> </span>
+                        </a>
+                    </li>
+                </ul>
+                <?php if (!isset($_SESSION['username']))
+                    echo "<a href=\"login.php\">Login</a>"; ?>
+
+                <?php if (isset($_SESSION['username']))
+                {
+                    echo $_SESSION['username'];
+                    echo "<a href='logout.php' <button type='button' class='btn btn-danger btn-sm'></button>Logout</a>"; 
+
+                }
+                ?>
+                    
+
+                
+
+
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>

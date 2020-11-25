@@ -18,6 +18,13 @@ html,body{
     padding-left: 16px !important;
     padding-right: 16px !important;
 }
+.navbar .nav-item{
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
 .navbar-toggler{
     outline: white;
 }

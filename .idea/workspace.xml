@@ -23,23 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d148798b-6dde-4de2-822e-edbc16833d3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/dell-inspiron-15-5000-15-6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/dell-inspiron-15-5000-15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/dell-inspiron-15-7000-15-6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/dell-xps-15-9560.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/cart.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/details.php" beforeDir="false" afterPath="$PROJECT_DIR$/details.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/tplink.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/tplink.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/insert_product.php" beforeDir="false" afterPath="$PROJECT_DIR$/insert_product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop.php" beforeDir="false" afterPath="$PROJECT_DIR$/shop.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,6 +126,8 @@
       <workItem from="1606053665519" duration="5287000" />
       <workItem from="1606113808493" duration="2195000" />
       <workItem from="1606196289531" duration="20857000" />
+      <workItem from="1606279269055" duration="598000" />
+      <workItem from="1606285330332" duration="676000" />
     </task>
     <servers />
   </component>

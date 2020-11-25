@@ -1,10 +1,15 @@
 <?php
 include("includes/header.php");
+
+
 ?>
+
+
 <div class="row">
     <div class="col-md-3 pt-4">
         <?php
         include("includes/sidebar.php");
+        // echo $_SESSION['username'];
         ?>
     </div>
     <div class="col-md-9">
