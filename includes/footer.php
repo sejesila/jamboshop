@@ -5,7 +5,7 @@
 
     <!-- Copyright -->
     <div class="footer-copyright text-center p-1 ">© 2020 Copyright:
-        <a href="#"> Seje Silas </a>
+        <a href="#"> Seje Silas  |   All rights reserved. </a>
     </div>
     <!-- Copyright -->
 

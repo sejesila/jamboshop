@@ -1,7 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d148798b-6dde-4de2-822e-edbc16833d3a" name="Default Changelist" comment="" />
+    <list default="true" id="d148798b-6dde-4de2-822e-edbc16833d3a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/dell-inspiron-15-5000-15-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/dell-inspiron-15-5000-15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/dell-inspiron-15-7000-15-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/dell-xps-15-9560.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/cart.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/details.php" beforeDir="false" afterPath="$PROJECT_DIR$/details.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tplink.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/tplink.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/insert_product.php" beforeDir="false" afterPath="$PROJECT_DIR$/insert_product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop.php" beforeDir="false" afterPath="$PROJECT_DIR$/shop.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,14 +49,23 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3" />
   <component name="ProjectId" id="1i87rZjOwZh4HoOAOSmaegAH9Yq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ecommerce" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -86,11 +134,31 @@
       <workItem from="1604985797233" duration="5615000" />
       <workItem from="1605070465678" duration="4416000" />
       <workItem from="1605272769274" duration="179000" />
+      <workItem from="1605956084063" duration="4449000" />
+      <workItem from="1606027497620" duration="12840000" />
+      <workItem from="1606053665519" duration="5287000" />
+      <workItem from="1606113808493" duration="2195000" />
+      <workItem from="1606196289531" duration="20857000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2034" y="44" width="688" height="724" key="#PHP" timestamp="1601404818393">
@@ -111,9 +179,22 @@
     <state x="344" y="44" width="1022" height="675" key="SettingsEditor/1366.0.1366.768/0.44.1366.675@1366.0.1366.768" timestamp="1601359152933" />
     <state x="258" y="32" key="SettingsEditor/1366.0.1366.768/0.44.1366.724@0.44.1366.724" timestamp="1604910460320" />
     <state x="258" y="32" width="1022" height="736" key="SettingsEditor/1366.0.1366.768/0.44.1366.724@1366.0.1366.768" timestamp="1602571348735" />
-    <state x="1712" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1604393991110">
+    <state x="1371" y="44" width="1320" height="724" maximized="true" key="dock-window-1" timestamp="1606209049144">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
+    <state x="1371" y="44" width="1320" height="724" maximized="true" key="dock-window-1/1366.0.1366.768/0.44.1366.724@0.44.1366.724" timestamp="1606209049144" />
+    <state x="1371" y="44" width="1320" height="724" maximized="true" key="dock-window-2" timestamp="1606230534217">
+      <screen x="1366" y="0" width="1366" height="768" />
+    </state>
+    <state x="1371" y="44" width="1320" height="724" maximized="true" key="dock-window-2/1366.0.1366.768/0.44.1366.724@0.44.1366.724" timestamp="1606230534217" />
+    <state width="600" height="428" key="javadoc.popup" timestamp="1606031844904">
+      <screen x="0" y="44" width="1366" height="724" />
+    </state>
+    <state width="600" height="428" key="javadoc.popup/1366.0.1366.768/0.44.1366.724@0.44.1366.724" timestamp="1606031844904" />
+    <state x="346" y="128" width="672" height="640" key="search.everywhere.popup" timestamp="1606200621096">
+      <screen x="0" y="44" width="1366" height="724" />
+    </state>
+    <state x="346" y="128" width="672" height="640" key="search.everywhere.popup/1366.0.1366.768/0.44.1366.724@0.44.1366.724" timestamp="1606200621096" />
     <state x="1712" y="89" width="672" height="678" key="search.everywhere.popup/1366.0.1366.768/0.44.1366.724@1366.0.1366.768" timestamp="1604393991110" />
   </component>
 </project>

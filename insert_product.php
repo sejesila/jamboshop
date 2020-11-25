@@ -56,11 +56,16 @@ include("includes/header.php")
 
         </div>
         <div class="form-group row">
-            <label class="col-md-3 control-label">Product Price</label>
+            <label class="col-md-3 control-label">Initial Price</label>
+            <div class="col-md-6">
+                <input type="text" name="initial_price" class="form-control" placeholder="Initial Price" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-md-3 control-label">Current Price</label>
             <div class="col-md-6">
                 <input type="text" name="product_price" class="form-control" placeholder="Product Price" required>
             </div>
-
         </div>
         <div class="form-group row">
             <label class="col-md-3 control-label">Product Keywords</label>
@@ -92,6 +97,7 @@ include("includes/header.php")
 if (isset($_POST['submit'])) {
     $product_title = $_POST['product_title'];
     $product_cat = $_POST['product_cat'];
+    $initial_price = $_POST['initial_price'];
     $product_price = $_POST['product_price'];
     $product_keywords = $_POST['product_keywords'];
     $product_desc = $_POST['product_desc'];
@@ -109,7 +115,7 @@ if (isset($_POST['submit'])) {
     move_uploaded_file($temp_name3, "images/$product_img3");
 
     $add_product = "insert into products 
-    (p_cat_id,date,product_title,product_img1,product_img2,product_img3,product_price,product_keywords,product_desc) values ('$product_cat',NOW(),' $product_title ','$product_img1','$product_img2','$product_img3','$product_price','$product_keywords','$product_desc') ";
+    (p_cat_id,date,product_title,product_img1,product_img2,product_img3,mrp,product_price,product_keywords,product_desc) values ('$product_cat',NOW(),' $product_title ','$product_img1','$product_img2','$product_img3','$initial_price','$product_price','$product_keywords','$product_desc') ";
 
     $run_product = mysqli_query($conn, $add_product);
     if ($run_product) {

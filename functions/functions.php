@@ -13,23 +13,45 @@
 
     function add_cart(){
         global $db;
-        if (isset($_GET['add_cart'])){
+       if (isset($_GET['add_cart'])){
 //            $ip_add = getRealIpUser();
             $p_id = $_GET['add_cart'];
-            $product_qty = $_POST['product_qty'];
-//            $product_size = $_POST['product_size'];
+           $product_qty = $_POST['qty'];
+//          $product_size = $_POST['product_size'];
             $check_product = "select * from cart where p_id='$p_id'";
             $run_check = mysqli_query($db,$check_product);
-            if (mysqli_num_rows($run_check)>0){
+            if (mysqli_num_rows($run_check) > 0){
                 echo "<script> alert('This product has already been added to cart')</script>";
                 echo "<script> window.open('details.php?pro_id=$p_id','_self')</script>";
             } else{
-                $query = "insert into cart (p_id,qty) values ('$p_id','$product_qty')";
-                $run_query = mysqli_query($db,$query);
-                echo "<script> window.open('details.php?pro_id=$p_id','_self') </script>";
+                // Prepare an insert statement
+                $insert = "INSERT INTO cart (p_id,qty) VALUES (?, ?)";
+                if($stmt = mysqli_prepare($db,$insert)){
+                    mysqli_stmt_bind_param($stmt,"ss",$p_id,$product_qty);
+                    //Set Parameters
+                    $p_id = $_REQUEST['p_id'];
+                    $product_qty=$_REQUEST['qty'];
+                    if(mysqli_stmt_execute($stmt)){
+                        echo "Product added to cart.";
+                    }
+                    else{
+                        echo "Could not execute the query: $insert".mysqli_error($db);
+                    }
+                }
+                else{
+                    echo "Could not prepare the query: $insert".mysqli_error($db);
+                }
+//                $query = "insert into cart (p_id,qty) values ('$p_id','$product_qty')";
+//                $run_query = mysqli_query($db,$query);
+//                if($run_query){
+//                    echo "<script> window.open('details.php?pro_id=$p_id','_self') </script>";
+//                }else{
+//                    echo "error occurred";
+//                }
+
             }
 
-        }
+       }
     }
     function details(){
         global $db;
@@ -60,7 +82,7 @@
 
         }
     }
-    echo "$".$total;
+    echo "".$total;
     }
     function getPCats(){
         global $db;

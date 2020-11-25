@@ -24,7 +24,7 @@ include ($_SERVER['DOCUMENT_ROOT'].'/eshop/functions/functions.php');
 
 <nav class="navbar navbar-expand-sm sticky-top navbar-dark bg-dark">
     <div class="container">
-        <a href="index.php" class="navbar-brand">Logo</a>
+        <a href="index.php" class="navbar-brand">JamboShop</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -49,6 +49,14 @@ include ($_SERVER['DOCUMENT_ROOT'].'/eshop/functions/functions.php');
                     </a>
                 </li>
             </ul>
+            <form method="POST" class="navbar-form navbar-left" action="search.php">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="navbar-search-input" name="keyword" placeholder="Search for Product" required>
+                    <span class="input-group-btn" id="searchBtn" style="display:none;">
+                  <button type="submit" class="btn btn-default btn-flat"><i class="fa fa-search"></i> </button>
+              </span>
+                </div>
+            </form>
         </div>
     </div>
 </nav>
