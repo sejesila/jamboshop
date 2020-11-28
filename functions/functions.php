@@ -1,4 +1,5 @@
 <?php
+ 
     $db = mysqli_connect("localhost","root","","ecom_store");
 
     // function getRealIpUser(){
@@ -11,12 +12,11 @@
     //     }
     // }
 
-    function add_cart(){
+    function add_cart(){ //not working
         global $db;
        if (isset($_GET['add_cart'])){
-//            $ip_add = getRealIpUser();
             $p_id = $_GET['add_cart'];
-           $product_qty = $_POST['qty'];
+           //$product_qty = $_POST['qty'];
 //          $product_size = $_POST['product_size'];
             $check_product = "select * from cart where p_id='$p_id'";
             $run_check = mysqli_query($db,$check_product);
@@ -25,12 +25,12 @@
                 echo "<script> window.open('details.php?pro_id=$p_id','_self')</script>";
             } else{
                 // Prepare an insert statement
-                $insert = "INSERT INTO cart (p_id,qty) VALUES (?, ?)";
+                $insert = "INSERT INTO cart (p_id) VALUES ( ?)";
                 if($stmt = mysqli_prepare($db,$insert)){
-                    mysqli_stmt_bind_param($stmt,"ss",$p_id,$product_qty);
+                    mysqli_stmt_bind_param($stmt,"s",$p_id);
                     //Set Parameters
                     $p_id = $_REQUEST['p_id'];
-                    $product_qty=$_REQUEST['qty'];
+                   // $product_qty=$_REQUEST['qty'];
                     if(mysqli_stmt_execute($stmt)){
                         echo "Product added to cart.";
                     }
@@ -72,7 +72,7 @@
     $select_cart = "select * from cart ";
     $run_cart = mysqli_query($db,$select_cart);
     while ($record=mysqli_fetch_array($run_cart)){
-        $pro_id = $record['p_id'];
+        $pro_id = $record['pid'];
         $pro_qty =$record['qty'];
         $get_price = "select * from products where product_id='$pro_id' ";
         $run_price = mysqli_query($db,$get_price);

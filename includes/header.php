@@ -2,13 +2,6 @@
 session_start();
 include($_SERVER['DOCUMENT_ROOT'] . '/eshop/includes/db.php');
 include($_SERVER['DOCUMENT_ROOT'] . '/eshop/functions/functions.php');
-
-//include("includes/session.php");
-// if($_SESSION['username']==''){
-//     header("location: login.php");
-   
-// }
-
 ?>
 <!doctype html>
 <html lang="en">
@@ -62,26 +55,23 @@ include($_SERVER['DOCUMENT_ROOT'] . '/eshop/functions/functions.php');
                     </li>
                     <li class="nav-item">
                         <a href="cart.php" class="nav-link">
-                            <i class="fa fa-shopping-cart fa-8x"></i>
+                            <i id="cart-item" class="fa fa-shopping-cart fa-8x"></i>
                             <span><?php items(); ?> </span>
                         </a>
                     </li>
                 </ul>
                 <?php if (!isset($_SESSION['username']))
-                    echo "<a href=\"login.php\">Login</a>"; ?>
+                   
+                    echo "<a href='login.php' <button type='button' class='btn btn-warning btn-sm'></button>Login</a>";  ?>
 
                 <?php if (isset($_SESSION['username']))
                 {
-                    echo $_SESSION['username'];
+                    echo '<li class="nav-link"><a href="#">'.$_SESSION['username'].'</a></li>';
                     echo "<a href='logout.php' <button type='button' class='btn btn-danger btn-sm'></button>Logout</a>"; 
 
                 }
                 ?>
-                    
-
-                
-
-
             </div>
         </div>
     </nav>
+

@@ -23,10 +23,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d148798b-6dde-4de2-822e-edbc16833d3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/account.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/action.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/eshop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/eshop.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/cart.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/details.php" beforeDir="false" afterPath="$PROJECT_DIR$/details.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop.php" beforeDir="false" afterPath="$PROJECT_DIR$/shop.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +43,12 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3" />
   <component name="ProjectId" id="1i87rZjOwZh4HoOAOSmaegAH9Yq" />
@@ -52,11 +63,10 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ecommerce" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet.jsx" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -128,6 +138,12 @@
       <workItem from="1606196289531" duration="20857000" />
       <workItem from="1606279269055" duration="598000" />
       <workItem from="1606285330332" duration="676000" />
+      <workItem from="1606378037692" duration="22000" />
+      <workItem from="1606378102396" duration="3573000" />
+      <workItem from="1606394113997" duration="636000" />
+      <workItem from="1606398490294" duration="7769000" />
+      <workItem from="1606411441559" duration="1309000" />
+      <workItem from="1606452490307" duration="7394000" />
     </task>
     <servers />
   </component>
@@ -154,17 +170,23 @@
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="2034" y="44" width="688" height="724" key="#PHP/1366.0.1366.768/0.44.1366.724@1366.0.1366.768" timestamp="1601404818393" />
-    <state x="1832" y="164" width="424" height="490" key="FileChooserDialogImpl" timestamp="1601365153213">
-      <screen x="1366" y="0" width="1366" height="768" />
+    <state x="502" y="189" width="524" height="440" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper" timestamp="1606403639262">
+      <screen x="0" y="44" width="1366" height="724" />
     </state>
+    <state x="502" y="189" width="524" height="440" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper/0.44.1366.724/1366.0.1366.768@0.44.1366.724" timestamp="1606403639262" />
+    <state x="466" y="199" width="424" height="490" key="FileChooserDialogImpl" timestamp="1606403638207">
+      <screen x="0" y="44" width="1366" height="724" />
+    </state>
+    <state x="466" y="199" width="424" height="490" key="FileChooserDialogImpl/0.44.1366.724/1366.0.1366.768@0.44.1366.724" timestamp="1606403638207" />
     <state x="1832" y="164" width="424" height="490" key="FileChooserDialogImpl/1366.0.1366.768/0.44.1366.724@1366.0.1366.768" timestamp="1601365153213" />
     <state x="1845" y="306" width="397" height="157" key="NewPhpFileDialog" timestamp="1601277600658">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="1845" y="306" width="397" height="157" key="NewPhpFileDialog/1366.0.1366.768/0.44.1366.675@1366.0.1366.768" timestamp="1601277600658" />
-    <state x="258" y="32" width="1022" height="736" key="SettingsEditor" timestamp="1604910460320">
+    <state x="258" y="44" width="1022" height="724" key="SettingsEditor" timestamp="1606403842599">
       <screen x="0" y="44" width="1366" height="724" />
     </state>
+    <state x="258" y="44" width="1022" height="724" key="SettingsEditor/0.44.1366.724/1366.0.1366.768@0.44.1366.724" timestamp="1606403842599" />
     <state x="344" y="44" width="1022" height="675" key="SettingsEditor/1366.0.1366.768/0.44.1366.675@1366.0.1366.768" timestamp="1601359152933" />
     <state x="258" y="32" key="SettingsEditor/1366.0.1366.768/0.44.1366.724@0.44.1366.724" timestamp="1604910460320" />
     <state x="258" y="32" width="1022" height="736" key="SettingsEditor/1366.0.1366.768/0.44.1366.724@1366.0.1366.768" timestamp="1602571348735" />
@@ -176,14 +198,26 @@
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="1371" y="44" width="1320" height="724" maximized="true" key="dock-window-2/1366.0.1366.768/0.44.1366.724@0.44.1366.724" timestamp="1606230534217" />
-    <state width="600" height="428" key="javadoc.popup" timestamp="1606031844904">
+    <state width="600" height="428" key="javadoc.popup" timestamp="1606457371140">
       <screen x="0" y="44" width="1366" height="724" />
     </state>
+    <state width="600" height="428" key="javadoc.popup/0.44.1366.724/1366.0.1366.768@0.44.1366.724" timestamp="1606457371140" />
     <state width="600" height="428" key="javadoc.popup/1366.0.1366.768/0.44.1366.724@0.44.1366.724" timestamp="1606031844904" />
     <state x="346" y="128" width="672" height="640" key="search.everywhere.popup" timestamp="1606200621096">
       <screen x="0" y="44" width="1366" height="724" />
     </state>
     <state x="346" y="128" width="672" height="640" key="search.everywhere.popup/1366.0.1366.768/0.44.1366.724@0.44.1366.724" timestamp="1606200621096" />
     <state x="1712" y="89" width="672" height="678" key="search.everywhere.popup/1366.0.1366.768/0.44.1366.724@1366.0.1366.768" timestamp="1604393991110" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/action.php</url>
+          <line>20</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

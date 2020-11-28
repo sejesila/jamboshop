@@ -15,7 +15,7 @@ include("includes/header.php")
                 <?php
                 $total = 0;
                 while ($row_cart = mysqli_fetch_array($run_cart)){
-                    $pro_id = $row_cart['p_id'];
+                    $pro_id = $row_cart['pid'];
                     $pro_qty = $row_cart['qty'];
                     $get_products = "select * from products where product_id='$pro_id' ";
                     $run_products = mysqli_query($conn,$get_products);

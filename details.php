@@ -1,42 +1,51 @@
 <?php
 include("includes/header.php");
-add_cart();
+
 ?>
+
 <?php
-if(isset($_GET['pro_id'])) {
+if (isset($_GET['pro_id'])) {
     $product_id = $_GET['pro_id'];
     $get_product = "select * from products where product_id='$product_id'";
     $run_product = mysqli_query($conn, $get_product);
-    while ( $row_product = mysqli_fetch_array($run_product)){
+    while ($row_product = mysqli_fetch_array($run_product)) {
         $p_cat_id = $row_product['p_cat_id'];
         $pro_title = $row_product['product_title'];
         $retail_price = $row_product['mrp'];
-        $pro_price =$row_product['product_price'];
+        $pro_price = $row_product['product_price'];
         $pro_desc = $row_product['product_desc'];
         $pro_img = $row_product['product_img1'];
         $seller = $row_product['seller_name'];
 
-
-
         echo "
+        
             
-<form action='' method='post'>
+<form class='form-submit' action='' method='post'>
 <section id='product' class='py-3'>
     <div class='container'>
-        <div class='row py-4'>
-            <div class='col-sm-6'>
-                <img src='images/$pro_img'   alt='product' class='img-fluid'>
-                <div class='form-row pt-4 font-size-16'>
-                    <div class='col'>
-                        <button type='submit' class='btn btn-danger form-control'>Proceed to buy</button>
+         <div id='message'></div>
+            <div class='row py-4'>
+                 <div class='col-sm-6'>
+                    <img src='images/$pro_img'   alt='product' class='img-fluid'>
+                    <div class='form-row pt-4 font-size-16'>
+                        <div class='col-sm-4'>
+                            <button type='submit' class='btn btn-danger form-control'>Proceed to buy</button>
 
-                    </div>
-                    <div class='col'>
-                        <button type='submit' name='add_cart' class='btn btn-warning form-control i fa fa-shopping-cart'>Add to
-                            Cart</button>
-                    </div>
+                        </div>
+                    <div>
+                    <form action='' class='form-submit'>
+                        <input type='hidden' class='pid' value='$product_id'>
+                        <input type='hidden' class='pname' value='$pro_title'>
+                        <input type='hidden' class='pprice' value='$pro_price'>
+                        <input type='hidden' class='pimage' value='$pro_img'>
+                        <button  class='btn btn-info form-control i fa fa-shopping-cart addItemBtn'>Add to Cart</button>
+                
+                        
+                    </form>
                 </div>
+                    
             </div>
+        </div>
             <div class='col-sm-6'>
                 <h5 class='font-size-20'> $pro_title</h5>
                 <small>by $seller</small>
@@ -96,7 +105,7 @@ if(isset($_GET['pro_id'])) {
             <div class='col-12'>
                 <h6> Product Description</h6>
                 <hr>
-             $pro_desc  
+                     $pro_desc  
 
             </div>
         </div>
@@ -104,15 +113,43 @@ if(isset($_GET['pro_id'])) {
 </section>
 </form>
 ";
-
     }
-
-
 }
 
 ?>
+<script>
+    $(function() {
+        $(".addItemBtn").click(function(e) {
+            e.preventDefault();
+            let $form = $(this).closest(".form-submit");
+            let pid = $form.find(".pid").val();
+            let pname = $form.find(".pname").val();
+            let pprice = $form.find(".pprice").val();
+            let pimage = $form.find(".pimage").val();
+
+            $.ajax({
+                url: 'action.php',
+                method: 'post',
+                data: {
+                    pid: pid,
+                    pname: pname,
+                    pprice: pprice,
+                    pimage: pimage
+                },
+
+                success: function(response) {
+                    $("#message").html(response);
+                }
+
+            });
+
+        });
+
+
+    });
+</script>
 
 
 <?php
-    include("includes/footer.php");
-    ?>
+include("includes/footer.php");
+?>

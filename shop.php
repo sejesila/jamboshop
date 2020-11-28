@@ -4,7 +4,7 @@ include("includes/header.php");
 include($_SERVER['DOCUMENT_ROOT'] . '/eshop/includes/db.php');
 
 ?>
-    <div id="content">
+    <div id="container">
 
         <div class="row">
             <div class="col-sm-12">
