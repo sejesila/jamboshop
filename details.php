@@ -117,7 +117,7 @@ if (isset($_GET['pro_id'])) {
 }
 
 ?>
-<script>
+<script type="text/javascript">
     $(function() {
         $(".addItemBtn").click(function(e) {
             e.preventDefault();

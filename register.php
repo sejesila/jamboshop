@@ -8,7 +8,7 @@ include("includes/header.php")
         ?>
     </div>
     <div class="col-md-9">
-        <div class="p-4 d-flex  ">
+        <div class="p-4 d-flex">
 
 
             <?php

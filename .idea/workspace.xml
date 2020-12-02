@@ -23,15 +23,130 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d148798b-6dde-4de2-822e-edbc16833d3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/action.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/FAQ.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/changelog.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/__construct.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/acceptpagebreak.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/addfont.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/addlink.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/addpage.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/aliasnbpages.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/cell.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/close.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/error.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/footer.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/getpageheight.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/getpagewidth.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/getstringwidth.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/getx.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/gety.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/header.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/image.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/index.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/line.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/link.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/ln.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/multicell.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/output.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/pageno.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/rect.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/setauthor.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/setautopagebreak.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/setcompression.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/setcreator.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/setdisplaymode.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/setdrawcolor.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/setfillcolor.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/setfont.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/setfontsize.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/setkeywords.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/setleftmargin.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/setlinewidth.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/setlink.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/setmargins.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/setrightmargin.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/setsubject.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/settextcolor.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/settitle.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/settopmargin.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/setx.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/setxy.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/sety.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/text.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/doc/write.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/font/courier.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/font/courierb.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/font/courierbi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/font/courieri.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/font/helvetica.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/font/helveticab.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/font/helveticabi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/font/helveticai.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/font/symbol.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/font/times.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/font/timesb.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/font/timesbi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/font/timesi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/font/zapfdingbats.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/fpdf.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/fpdf.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/install.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/license.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/makefont/cp1250.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/makefont/cp1251.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/makefont/cp1252.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/makefont/cp1253.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/makefont/cp1254.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/makefont/cp1255.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/makefont/cp1257.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/makefont/cp1258.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/makefont/cp874.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/makefont/iso-8859-1.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/makefont/iso-8859-11.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/makefont/iso-8859-15.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/makefont/iso-8859-16.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/makefont/iso-8859-2.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/makefont/iso-8859-4.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/makefont/iso-8859-5.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/makefont/iso-8859-7.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/makefont/iso-8859-9.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/makefont/koi8-r.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/makefont/koi8-u.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/makefont/makefont.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/makefont/ttfparser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/tutorial/20k_c1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/tutorial/20k_c2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/tutorial/calligra.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/tutorial/calligra.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/tutorial/calligra.z" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/tutorial/countries.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/tutorial/index.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/tutorial/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/tutorial/makefont.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/tutorial/tuto1.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/tutorial/tuto1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/tutorial/tuto2.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/tutorial/tuto2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/tutorial/tuto3.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/tutorial/tuto3.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/tutorial/tuto4.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/tutorial/tuto4.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/tutorial/tuto5.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/tutorial/tuto5.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/tutorial/tuto6.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/tutorial/tuto6.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/tutorial/tuto7.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fpdf/tutorial/tuto7.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pdf_gen.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/eshop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/eshop.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/action.php" beforeDir="false" afterPath="$PROJECT_DIR$/action.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/cart.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/details.php" beforeDir="false" afterPath="$PROJECT_DIR$/details.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop.php" beforeDir="false" afterPath="$PROJECT_DIR$/shop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +154,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
+    <pharConfigPath>$PROJECT_DIR$/tcpdf/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="Git.Settings">
@@ -50,7 +166,6 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3" />
   <component name="ProjectId" id="1i87rZjOwZh4HoOAOSmaegAH9Yq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -64,9 +179,15 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ecommerce" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -144,6 +265,22 @@
       <workItem from="1606398490294" duration="7769000" />
       <workItem from="1606411441559" duration="1309000" />
       <workItem from="1606452490307" duration="7394000" />
+      <workItem from="1606539611604" duration="79000" />
+      <workItem from="1606539707006" duration="445000" />
+      <workItem from="1606540168024" duration="1824000" />
+      <workItem from="1606542018193" duration="241000" />
+      <workItem from="1606542276256" duration="3514000" />
+      <workItem from="1606666818673" duration="1443000" />
+      <workItem from="1606719487428" duration="695000" />
+      <workItem from="1606720210920" duration="110000" />
+      <workItem from="1606720369049" duration="43000" />
+      <workItem from="1606720436941" duration="202000" />
+      <workItem from="1606720664372" duration="825000" />
+      <workItem from="1606721508432" duration="3536000" />
+      <workItem from="1606731503627" duration="9406000" />
+      <workItem from="1606799779479" duration="15648000" />
+      <workItem from="1606833318899" duration="13048000" />
+      <workItem from="1606884138874" duration="10970000" />
     </task>
     <servers />
   </component>
@@ -166,10 +303,23 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="410" y="189" width="536" height="361" key="#Notifications" timestamp="1606720736212">
+      <screen x="0" y="0" width="1366" height="740" />
+    </state>
+    <state x="410" y="189" width="536" height="361" key="#Notifications/0.0.1366.740/1366.0.1366.768@0.0.1366.740" timestamp="1606720736212" />
     <state x="2034" y="44" width="688" height="724" key="#PHP" timestamp="1601404818393">
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="2034" y="44" width="688" height="724" key="#PHP/1366.0.1366.768/0.44.1366.724@1366.0.1366.768" timestamp="1601404818393" />
+    <state x="0" y="223" width="1356" height="293" key="#SQL_Dialects" timestamp="1606721412523">
+      <screen x="0" y="0" width="1366" height="740" />
+    </state>
+    <state x="0" y="223" key="#SQL_Dialects/0.0.1366.740/1366.0.1366.768@0.0.1366.740" timestamp="1606721412523" />
+    <state x="0" y="250" width="1356" height="293" key="#SQL_Dialects/0.27.1366.741/1366.0.1366.768@0.27.1366.741" timestamp="1606543457973" />
+    <state x="278" y="59" width="800" height="676" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606543494846">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="278" y="59" width="800" height="676" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1366.741/1366.0.1366.768@0.27.1366.741" timestamp="1606543494846" />
     <state x="502" y="189" width="524" height="440" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper" timestamp="1606403639262">
       <screen x="0" y="44" width="1366" height="724" />
     </state>
@@ -183,9 +333,11 @@
       <screen x="1366" y="0" width="1366" height="768" />
     </state>
     <state x="1845" y="306" width="397" height="157" key="NewPhpFileDialog/1366.0.1366.768/0.44.1366.675@1366.0.1366.768" timestamp="1601277600658" />
-    <state x="258" y="44" width="1022" height="724" key="SettingsEditor" timestamp="1606403842599">
-      <screen x="0" y="44" width="1366" height="724" />
+    <state x="1538" y="10" width="1186" height="730" key="SettingsEditor" timestamp="1606721555257">
+      <screen x="1366" y="0" width="1366" height="768" />
     </state>
+    <state x="1538" y="10" key="SettingsEditor/0.0.1366.740/1366.0.1366.768@0.0.1366.740" timestamp="1606721555257" />
+    <state x="76" y="38" width="1186" height="730" key="SettingsEditor/0.27.1366.741/1366.0.1366.768@0.27.1366.741" timestamp="1606543432355" />
     <state x="258" y="44" width="1022" height="724" key="SettingsEditor/0.44.1366.724/1366.0.1366.768@0.44.1366.724" timestamp="1606403842599" />
     <state x="344" y="44" width="1022" height="675" key="SettingsEditor/1366.0.1366.768/0.44.1366.675@1366.0.1366.768" timestamp="1601359152933" />
     <state x="258" y="32" key="SettingsEditor/1366.0.1366.768/0.44.1366.724@0.44.1366.724" timestamp="1604910460320" />
@@ -208,16 +360,5 @@
     </state>
     <state x="346" y="128" width="672" height="640" key="search.everywhere.popup/1366.0.1366.768/0.44.1366.724@0.44.1366.724" timestamp="1606200621096" />
     <state x="1712" y="89" width="672" height="678" key="search.everywhere.popup/1366.0.1366.768/0.44.1366.724@1366.0.1366.768" timestamp="1604393991110" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/action.php</url>
-          <line>20</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

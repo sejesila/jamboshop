@@ -1,86 +1,125 @@
 <?php
+
 include("includes/header.php")
 ?>
 
-<section class="py-3" id="cart">
-    <div class="container-fluid w-75">
-        <h5 class="font-size-20">Shopping Cart</h5>
-        <?php
-        $select_cart = "select * from cart";
-        $run_cart = mysqli_query($conn,$select_cart);
-        $count = mysqli_num_rows($run_cart);
-        ?>
-        <div class="row">
-            <div class="col-sm-8">
-                <?php
-                $total = 0;
-                while ($row_cart = mysqli_fetch_array($run_cart)){
-                    $pro_id = $row_cart['pid'];
-                    $pro_qty = $row_cart['qty'];
-                    $get_products = "select * from products where product_id='$pro_id' ";
-                    $run_products = mysqli_query($conn,$get_products);
-                    while($row_products = mysqli_fetch_array($run_products)){
-                        $pro_title = $row_products['product_title'];
-                        $pro_price = $row_products['product_price'];
-                        $pro_img1 = $row_products['product_img1'];
-                        $sub_total = $row_products['product_price']*$pro_qty;
-                        $seller = $row_products['seller_name'];
-                        $total +=$sub_total;
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div style="display: <?php if(isset($_SESSION['showAlert'])) {echo $_SESSION['showAlert'];} else {echo 'none';} unset($_SESSION['showAlert']) ?>" class="alert alert-success alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong><?php if(isset($_SESSION['message'])) {echo $_SESSION['message'];} unset($_SESSION['showAlert']); ?></strong>
+            </div>
+            <div class="table-responsive mt-2">
+                <table class="table table-bordered table-stripped text-center">
+                    <thead>
 
-                        echo "
-                        <div class='row border-top py-3 mt-3'>
-                    <div class='col-sm-2'>
-                        <img src='images/$pro_img1' alt='cart1' height='220px' class='img-fluid'>
-            </div>
-            <div class='col-sm-8'>
-                <h5 class='font-size-20'> $pro_title </h5>
-                <small>by $seller</small>
-                <div class='d-flex'>
-                    <div class='rating text-warning font-size-12'>
-                        <span><i class='fa fa-star'></i></span>
-                        <span><i class='fa fa-star'></i></span>
-                        <span><i class='fa fa-star'></i></span>
-                        <span><i class='fa fa-star'></i></span>
-                        <span><i class='fa fa-star-half-full'></i></span>
-                    </div>
-                    <a href='#' class='px-2 font-size-14'>20,304 ratings</a>
-                </div>
-                <div class='qty d-flex pt-2'>
-               
-                    <button class='btn text-danger px-3 border-right'>Delete</button>
-                    <button class='btn text-warning'>Save for later</button>
-                </div>
-            </div>
-            <div class='col-sm-2 text-right'>
-                <div class='font-size-20 text-danger'>
-                    Ksh <span class='product_price'>$pro_price</span>
-                </div>
+                    <tr>
+                        <td colspan="7">
+                            <h4 class="text-center text-info m-0"> Products in your Cart!</h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>ID</th>
+                        <th>Image</th>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total Price</th>
+                        <th>
+                            <a href="action.php?clear=all" class="badge-danger badge p-2" onclick="return confirm(('Are you sure you want to clear the cart'))"> <i class="fa fa-trash"></i>&nbsp;Clear Cart</a>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <?php
+                   // require 'functions/functions.php';
+                    $stmt = $db->prepare("select * from cart");
+                    $stmt->execute();
+                    $result = $stmt->get_result();
+                    $grand_total=0;
+                    while ($row = $result->fetch_assoc()):
+
+                    ?>
+                    <tr>
+                        <td><?= $row['pid'] ?></td>
+                        <input type="hidden" class="pid" value="<?= $row['pid'] ?>">
+                        <?php
+                        echo ' <td><img width="50px" class="img-fluid " src="images/'.$row['pimage'].'" alt="product image"></td>';
+                        ?>
+                        <td style="width: auto;"><?= $row['pname'] ?></td>
+
+                        <td> Ksh <?=  number_format( $row['pprice'],2 )?></td>
+                        <input type="hidden" class="pprice" value="<?=$row['pprice']?>">
+                        <td><input type="number" class="form-control itemQty" style="width: 75px;" min="1" value="<?= $row['qty']?>"></td>
+                        <td> Ksh <?=  number_format( $row['total_price'],2 )?></td>
+                        <td>
+                            <a href="action.php?remove=<?= $row['pid']?>" class="text-danger lead" onclick="return confirm('Are you sure you want to remove this item?');"><i class="fa fa-trash"></i></a>
+                        </td>
+                    </tr>
+                        <?php $grand_total +=$row['total_price']; ?>
+                    <?php endwhile; ?>
+                    <tr>
+                        <td colspan="3">
+                            <a href="shop.php" class="btn btn-success"> Continue Shopping</a>
+                        </td>
+                        <td colspan="2"> <strong>Grand Total</strong> </td>
+                        <td> Ksh. <strong><?= number_format($grand_total)?> </strong> </td>
+                        <td>
+                            <a href="checkout.php" class="btn btn-info <?= ($grand_total>1)?"":"disabled"?>"> <i class="fa fa-credit-card"></i> &nbsp; Checkout</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
-        
-                        ";
-                    }
+
+    </div>
+</div>
+<script type="text/javascript">
+    $(function() {
+        $(".itemQty").on('change',function () {
+            let $el = $(this).closest('tr');
+
+            let pid = $el.find(".pid").val();
+            let pprice = $el.find(".pprice").val();
+            let qty = $el.find(".itemQty").val();
+           // console.log(qty);
+            location.reload();
+
+            $.ajax({
+                url:'action.php',
+                method:'post',
+                cache:false,
+                data:{qty:qty,pid:pid,pprice:pprice},
+                success: function (response) {
+                    console.log(response);
+
                 }
-                ?>
-    </div>
+
+            });
+
+        });
+        // load_cart_item_number();
+        //
+        // function load_cart_item_number(){
+        //     $.ajax({
+        //         url:'action.php',
+        //         method:'get',
+        //         data: {cartItem:"cart_item"},
+        //         success:function (response){
+        //             $("#cart-item").html(response);
+        //         }
+        //
+        //     });
+        // }
+
+    });
 
 
-            <div class="col-sm-4 pl-6">
-                <div class="sub-total border text-center mt-2">
-                    <small class="text-success py-3"><i class=" p-2 fa fa-check">Your order is eligible for FREE
-                            delivery</i></small>
-                    <div class="border-top py-4">
-                        <h6>Total: <?php items()?> items :&nbsp;<span class="text-secondary">Ksh <span
-                                    class="text-secondary"> <?php total_price() ?></span>
-                        </h6>
-                        <button class="btn btn-warning mt-3">Proceed to Checkout</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-</section>
+</script>
 <?php
 include("includes/footer.php");
 ?>
+
