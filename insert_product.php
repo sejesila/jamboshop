@@ -16,7 +16,7 @@ include("includes/header.php")
             <label for="" class="col-md-3">Product Category</label>
             <div class="col-md-6">
                 <select name="product_cat" id="" class="form-control">
-                    <option> </option>
+                    <option value="" selected disabled>Select Product Category</option>
                     <?php
                     $get_p_cats = "select * from products_categories";
                     $run_p_cats = mysqli_query($conn, $get_p_cats);

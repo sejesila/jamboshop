@@ -66,7 +66,12 @@ include($_SERVER['DOCUMENT_ROOT'] . '/eshop/functions/functions.php');
 
                 <?php if (isset($_SESSION['username']))
                 {
+
                     echo '<li class="nav-link"><a href="#">'.$_SESSION['username'].'</a></li>';
+                    if (isset($_SESSION['role']))
+                    {
+                        echo "<a href='insert_product.php' <button type='button' style='margin-right: 15px' class='btn btn-primary btn-sm'></button>Add Product</a>";
+                    }
                     echo "<a href='logout.php' <button type='button' class='btn btn-danger btn-sm'></button>Logout</a>"; 
 
                 }

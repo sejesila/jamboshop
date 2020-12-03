@@ -27,7 +27,7 @@ include("includes/header.php");
 
 
 // Define variables and initialize with empty values
-$username = $password = "";
+$username = $password = $user_type = "";
 $username_err = $password_err = "";
 
 // Processing form data when form is submitted
@@ -50,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Validate credentials
     if (empty($username_err) && empty($password_err)) {
         // Prepare a select statement
-        $sql = "SELECT id, username, pasword FROM users WHERE username = ?";
+        $sql = "SELECT id, username, pasword, user_type FROM users WHERE username = ?";
 
         if ($stmt = mysqli_prepare($db, $sql)) {
             // Bind variables to the prepared statement as parameters
@@ -67,7 +67,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 // Check if username exists, if yes then verify password
                 if (mysqli_stmt_num_rows($stmt) == 1) {
                     // Bind result variables
-                    mysqli_stmt_bind_result($stmt, $id, $username, $hashed_password);
+                    mysqli_stmt_bind_result($stmt, $id, $username, $hashed_password,$user_type);
                     if (mysqli_stmt_fetch($stmt)) {
                         if (password_verify($password, $hashed_password)) {
                             // Password is correct, so start a new session
@@ -77,9 +77,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             $_SESSION["loggedin"] = true;
                             $_SESSION["id"] = $id;
                             $_SESSION["username"] = $username;
+                            $_SESSION['role'] = $user_type;
 
                             // Redirect user to welcome page
-                            header("location: index.php");
+                            header("location:index.php");
                         } else {
                             // Display an error message if password is not valid
                             $password_err = "The password you entered was not valid.";

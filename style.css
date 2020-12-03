@@ -1,29 +1,26 @@
 
 html,body{
-
     height: 100%;
     width: 100%;
     font-family: 'Raleway', sans-serif;
     scroll-behavior: smooth;
     overflow-x: hidden;
- 
-   
 }
-
 
 .navbar .nav-link{
     font-size: 14px;
     text-transform: uppercase;
     text-decoration: none;
-    padding-left: 16px !important;
-    padding-right: 16px !important;
+    margin: auto;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
 }
 .navbar .nav-item{
     font-size: 14px;
     text-transform: uppercase;
     text-decoration: none;
-    padding-left: 16px !important;
-    padding-right: 16px !important;
+    padding-left:8px !important;
+    padding-right: 8px !important;
 }
 .navbar-toggler{
     outline: white;
@@ -84,11 +81,9 @@ ul.breadcrumb li a:hover {
     width: 100%;
 }
 
-
 footer {
     padding: 5px;
     background: lightsteelblue;
-
 }
 .card {
     max-height: 200px;

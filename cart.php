@@ -64,7 +64,7 @@ include("includes/header.php")
                             <a href="shop.php" class="btn btn-success"> Continue Shopping</a>
                         </td>
                         <td colspan="2"> <strong>Grand Total</strong> </td>
-                        <td> Ksh. <strong><?= number_format($grand_total)?> </strong> </td>
+                        <td> Ksh. <strong><?= number_format($grand_total,2)?> </strong> </td>
                         <td>
                             <a href="checkout.php" class="btn btn-info <?= ($grand_total>1)?"":"disabled"?>"> <i class="fa fa-credit-card"></i> &nbsp; Checkout</a>
                         </td>
@@ -100,19 +100,6 @@ include("includes/header.php")
             });
 
         });
-        // load_cart_item_number();
-        //
-        // function load_cart_item_number(){
-        //     $.ajax({
-        //         url:'action.php',
-        //         method:'get',
-        //         data: {cartItem:"cart_item"},
-        //         success:function (response){
-        //             $("#cart-item").html(response);
-        //         }
-        //
-        //     });
-        // }
 
     });
 

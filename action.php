@@ -82,13 +82,7 @@ if(isset($_POST['action']) && isset($_POST['action']) == 'order'){
     $stmt = $db->prepare("insert into orders (name,email,phone,address,pmode,products,amount_paid) values (?,?,?,?,?,?,?)");
     $stmt->bind_param("sssssss",$name,$email,$phone,$address,$pmode,$products,$grand_total);
     $stmt->execute();
-//
-//    $pdf = new FPDF();
-//    $pdf ->AddPage();
-//    $pdf->SetTitle("Jambo eshop: Order Receipt");
-//    $pdf->SetFont('Arial', 'B',15);
-//    $pdf ->Cell(10,10,"Jambo eshop: Order Receipt",1,1,"C");
-//    $pdf->Output();
+
   $data .=
 
        '<div class="text-center">

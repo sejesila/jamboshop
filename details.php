@@ -18,8 +18,7 @@ if (isset($_GET['pro_id'])) {
         $seller = $row_product['seller_name'];
 
         echo "
-        
-            
+                 
 <form class='form-submit' action='' method='post'>
 <section id='product' class='py-3'>
     <div class='container'>
@@ -105,7 +104,10 @@ if (isset($_GET['pro_id'])) {
             <div class='col-12'>
                 <h6> Product Description</h6>
                 <hr>
-                     $pro_desc  
+                <span> 
+                   $pro_desc  
+                   </span>
+                  
 
             </div>
         </div>

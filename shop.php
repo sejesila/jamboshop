@@ -30,7 +30,7 @@ include($_SERVER['DOCUMENT_ROOT'] . '/eshop/includes/db.php');
                     echo "
                   <div class='box'>
                  <h1>Shop with Us</h1>
-                 <p>Buy everything what you need on on our website. Biggest choice near You. 100% Free Classified. Post free Ads and get Buyers. <br> Jambo -Buy Smarter! Buy anything, anytime. Easy Registration. </p>
+                 <p>Buy everything what you need on our website. Biggest choice near You. 100% Free Classified. Post free Ads and get Buyers. <br> Jambo -Buy Smarter! Buy anything, anytime. Easy Registration. </p>
                  </div>";
                 }
                 ?>

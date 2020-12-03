@@ -2,7 +2,7 @@
 require_once  "fpdf/fpdf.php";
 require_once "functions/functions.php";
 
-$sql = "select * from orders where id = 39";
+$sql = "select * from orders where id = 42";
 $data = mysqli_query($db,$sql);
 $row = mysqli_fetch_assoc($data);
 if(isset($_POST['btn_pdf'])){
@@ -26,6 +26,8 @@ if(isset($_POST['btn_pdf'])){
     $pdf ->cell(59,5,"",0,1); //end of line
 
 
+    $pdf->Cell(20,10,'Date',0,0,"C");
+    $pdf ->cell(80,10,$currentdate = date("d-m-Y"),0,1); //end of line
 
 
     $pdf ->cell(180,10,"Order Receipt",0,"1","C");
@@ -54,8 +56,9 @@ if(isset($_POST['btn_pdf'])){
     $pdf ->cell(50,10,"Amount",1,0,"C");
     $pdf ->cell(100,10,"Ksh ".number_format($row['amount_paid']),1,"1");
 
+     $filename = $row['name'].'-'.$row['id']. '.pdf';
 
 
-    $pdf ->Output();
+    $pdf ->Output('D',$filename);
 
 }
