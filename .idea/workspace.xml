@@ -22,29 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d148798b-6dde-4de2-822e-edbc16833d3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/images/4-Port-VGA-switch.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/ASUS-TP410UA-EC287T-Intel-Core-i3-4GB-500GB-Touch-screen-Laptop.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Asus-Core-i7-5500U-8GB-1TB-15-Inch-Laptop.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/HP-Notebook-15-intel-Celeron-4GB-500GB-DOS-Laptop-300x300.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/HP-i7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/PBE-M5AC-GEN2-450x450.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/TECNO-Camon-15-Pro-yehchezpk__46931_zoom.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/nokia-106-2018-0__13764_std.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/ubiquiti-litebeam-m5-23dbi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/action.php" beforeDir="false" afterPath="$PROJECT_DIR$/action.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/cart.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart1.php" beforeDir="false" afterPath="$PROJECT_DIR$/cart1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/details.php" beforeDir="false" afterPath="$PROJECT_DIR$/details.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/insert_product.php" beforeDir="false" afterPath="$PROJECT_DIR$/insert_product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdf_gen.php" beforeDir="false" afterPath="$PROJECT_DIR$/pdf_gen.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop.php" beforeDir="false" afterPath="$PROJECT_DIR$/shop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="d148798b-6dde-4de2-822e-edbc16833d3a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -180,6 +158,7 @@
       <workItem from="1606884138874" duration="30167000" />
       <workItem from="1606962791705" duration="3408000" />
       <workItem from="1606969781470" duration="5586000" />
+      <workItem from="1606979254084" duration="417000" />
     </task>
     <servers />
   </component>
